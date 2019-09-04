@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Nghia</title>
+
 </head>
 <body class="m-1">
 
-  <nghia-app>angular placeholder </nghia-app>
+ <!-- <h3 class="bg-primary text-white p-3" align = "center">Phạm Nghĩa</h3> -->  
+
+    <nav>
+        <a href="https://www.google.com">HOME</a>
+        <a href="detail.html">DETAIL</a>
+        <a ng-href="../detail.html">Angular Docs</a>
+        <a target="_blank" href="file:///detail.html">no link here</a>
+        <a [routerLink]="[detail.html]">Movies</a>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">                  
+            <div >
+                <h4>About me</h4>
+            </div>
+        </div>        
+    </div>
 
 
 </body>
